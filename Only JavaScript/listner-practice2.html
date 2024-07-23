@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align:center;">
+
+    <h3>
+        JavaScript | Increase and
+        Decrease image size
+    </h3>
+
+    <hr>
+
+    <div class="box">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190912174307/qwe1.png" id="geeks" 
+            alt="error">
+    </div>
+    <hr>
+<div >
+    <button style="margin-right: 30px; cursor: pointer;" type="button" id="btn1">
+        Zoom-In
+    </button>
+    <button style="margin-right: 30px; cursor: pointer;" type="button" id="btn2">
+        Zoom-Out
+    </button>
+</div>
+
+    <script >
+        let button1 = document.getElementById("btn1")
+        button1.addEventListener("click", ()=>{
+
+            let zoomin= document.getElementById("geeks");
+            let currHeight = zoomin.clientHeight;
+            zoomin.style.height = (currHeight + 20) + "px";
+
+        })
+
+        let button2 = document.getElementById("btn2")
+        button2.addEventListener("click", ()=>{
+
+            let zoomout= document.getElementById("geeks");
+            let currHeight = zoomout.clientHeight;
+            zoomout.style.height = (currHeight - 20) + "px";
+
+        })
+    </script>
+ 
+</body>
+</html>
+

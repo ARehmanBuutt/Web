@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aqua;
+      }
+
+      .container {
+        background-color: antiquewhite;
+        border: 3px solid rgb(89, 52, 63);
+        /* padding: 9px; padding used to adjust your content */
+
+        /* padding: 23px 50px 65px 5px;  top, bottom, left, right all padding in one line*/
+
+        padding: 34px 19px; /*padding through x or y axis y=top/bottom, x=left/right : same for margin*/
+
+        margin: 34px; /*margin used to adjust distance btw paras*/
+
+        border-radius: 23px;
+        width: 533px;
+
+        /*box-sizing: border-box;  it adjust width according to padding */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod quia
+        et odit reprehenderit voluptatem necessitatibus suscipit, sit id eum
+        repellat delectus fuga culpa totam veritatis vero voluptate porro
+        dolorem?
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod quia
+        et odit reprehenderit voluptatem necessitatibus suscipit, sit id eum
+        repellat delectus fuga culpa totam veritatis vero voluptate porro
+        dolorem?
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>This is my heading</h3>
+      <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod quia
+        et odit reprehenderit voluptatem necessitatibus suscipit, sit id eum
+        repellat delectus fuga culpa totam veritatis vero voluptate porro
+        dolorem?
+      </p>
+    </div>
+  </body>
+</html>

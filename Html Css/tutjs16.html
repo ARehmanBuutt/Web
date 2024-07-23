@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in Js</title>
+</head>
+<body>
+
+    <div class="container">
+        This is Json Tutuorial
+    </div>
+
+    <script>
+        let jsonObj = {
+            name : "Butt",
+            channel : "CWB",
+            friend : "Faisal",
+            food : "Biryani",
+        }
+        console.log(jsonObj);
+
+        // stringify is used to convert object into string
+
+        let myJsunStr = JSON.stringify(jsonObj);
+        console.log(myJsunStr);
+
+        // replacing in Json
+        
+        myJsunStr = myJsunStr.replace('Butt', 'Butt1');
+        console.log(myJsunStr);
+
+        // parse is used to convert string into json object
+
+        newJsonObj = JSON.parse(myJsunStr);
+        console.log(newJsonObj);
+
+        
+    </script>
+
+</body>
+</html> 

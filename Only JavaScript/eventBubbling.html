@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubbling</title>
+
+  <style>
+    .child{
+      background-color : aliceblue;
+      border : 2px solid black;
+      padding : 14px;
+      margin : 14px;
+      cursor : pointer;
+    }
+
+    .childContainer{
+      background-color : rgb(30, 111, 183);
+      padding : 14px;
+      margin : 14px;
+    } 
+
+    .container{
+      background-color : rgb(6, 58, 103);
+      padding : 14px;
+      margin : 14px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <section class="childContainer">
+      <div class="child">i am a child</div>
+    </section>
+  </div>
+
+  <script>
+    document.querySelector(".child").addEventListener("click", (e) => {
+      e.stopPropagation();  /* to stop bubbling */
+      alert("Fuck you");
+    });
+
+    document
+      .querySelector(".childContainer")
+      .addEventListener("click", () => {
+        alert("Fuck you too");
+      });
+
+    document
+      .querySelector(".container")
+      .addEventListener("click", () => {
+        alert("Fuck you too you gay");
+      });
+
+    // setInterval(() => {
+    //     document.querySelector(".child").style.color = "blue";
+    // }, 1000);
+
+    // let a = setTimeout(() => {
+    //   document.querySelector(".child").style.color = "blue";
+    // }, 5000);
+
+    // console.log(a);
+
+  </script>
+</body>
+
+</html>

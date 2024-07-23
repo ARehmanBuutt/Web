@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(34 37 42);
+    
+}
+
+.container-fluid {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 850px;   
+}
+
+
+/* Navbar */
+
+
+ul {
+    
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ul li a {
+    font-family: "Poppins", sans-serif;
+    color: rgba(240, 248, 255, 0.781);
+    text-decoration:none;
+}
+
+ul li a:hover{
+    color: rgb(131 120 228);
+}
+
+
+.buy {
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn1{
+    color: white;
+    height: 35px;
+    width: 85px;
+    font-size: 13px;
+    background-color: rgb(131 120 228);
+    border: 2px;
+    border-radius: 6px;
+    cursor: pointer;  
+}
+
+.btn1 a{
+    color: white;
+    text-decoration: none !important;
+}
+
+.btn1 a:hover{
+    background-color: rgb(133, 121, 245);
+}
+
+
+/* Main Part */
+
+.main{
+    height: 900px;
+}
+
+.heading{
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    left:27%;
+    bottom: 70%;
+}
+
+.container{
+    justify-content:center;
+    position:absolute;
+    height: 10%;
+    width: 100%;
+    top: 35%;
+}
+
+.cate{
+    display: inline;
+    color:white;
+    margin:15px;
+    font-size:15px;
+}
+
+.button{
+    text-align:center;
+}
+
+.btn2{
+    display:inline;
+    text-decoration:none;
+    color:white;
+    margin:6px;
+    background-color: rgb(66 65 65 / 40%);
+    border-radius:10px;
+    padding:5px 12px;
+}
+
+.btn2:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.icon{
+    position: absolute;
+    left:17%;
+    top: 41.75%;
+    z-index: 1;
+    fill: rgb(247 194 46);
+    color-scheme: light;
+}
+
+.icon2{
+    position: absolute;
+    left: 75.5%;
+    top: 33.5%;
+    z-index: 1;
+    opacity: .4;
+    fill: rgb(133, 121, 245);
+    color-scheme: light;
+}
+
+.img1{
+    position: relative;
+    width: 100%;
+}
+
+.img2{
+    position: absolute;
+    width: 64%;
+    left: 18%;
+    top: 47%;
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 8px;
+}
+
+
+
+/* cards */
+/* work pending on this section */
+
+
+
+/* Features */
+
+
+.container1{
+    padding-left: 6%;
+}
+
+.col {
+    float: left;
+    padding-right: 10px;
+    padding-left:40px;
+}
+
+.row {
+    margin: 50px 50px;
+}
+
+.card1 {
+    width: 490px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 19px;
+    padding: 16px;
+    background-color: rgb(30 31 33);
+}
+
+.psl{
+    height: 280px;
+    border-radius: 10px;
+}
+
+.psl1{
+    color: white; 
+    font-size: 1.3rem;
+}
+
+.psl2{
+    color: white; 
+    opacity: .5; 
+    font-size: 15.5px; 
+}
+
+.psl3{
+    border-radius: 7px; 
+    height: 440px; 
+    width: 590px;
+    background: url(https://booking.webestica.com/landing/assets/images/bg/03.jpg); 
+}
+
+.cardtitle{
+    display: flex;
+    align-items: center;
+}
+
+.card-title1{
+    color: black;
+    position: absolute;
+    margin:0 350px 480px 150px;
+    cursor: text; 
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.view{
+    display: flex;
+    align-items: center;
+}
+
+.view1{
+    border: 0px solid black;
+    color: white;
+    position: absolute;
+    padding:5px 8px;
+    margin:0 0 380px 265px;
+    border-radius: 6px;
+    background-color:rgb(5, 5, 6);  
+    cursor: pointer; 
+    font-size: .90rem;
+}
+
+.view1 a{
+    color: white;
+    text-decoration: none !important;
+}
+
+.view1 a:hover{
+    color: white;
+}
+
+.psl4{
+    height: 370px; 
+    width: 350px; 
+    background-color: rgb(131 120 228); 
+    color: white; 
+    border-radius: 19px; 
+    padding: 30px; 
+    margin-top: 50px;
+}
+
+.psl5{
+    height: 370px; 
+    width: 350px; 
+    border-radius: 19px;
+    position: relative;
+}
+
+.dark{
+    display: flex;
+    align-items: center;
+}
+
+.dark1{
+    border: 0px solid rgb(131 120 228);
+    color: white;
+    position: absolute;
+    padding:15px 15px;
+    margin:0 0 320px 120px;
+    border-radius: 6px;
+    background-color:rgb(131 120 228);  
+    cursor: text; 
+    font-size: 1rem;
+}
+
+.psl6{
+    height: 370px;
+    background-color: rgb(37, 41, 47);
+    border-radius: 19px;
+    padding: 16px;
+}
+
+.psl7{
+    color: white; 
+    text-align: center; 
+    font-size: 1.25rem;
+}
+
+.psl8{
+    top:10px;
+    height: 270px; 
+    width: 300px; 
+    border-radius: 19px; 
+    top: 25%; 
+}
+
+.view0{
+    display: flex;
+    align-items: center;
+}
+
+.view2{
+    border: 0px solid black;
+    color: white;
+    position: absolute;
+    padding:5px 8px;
+    margin:0 0 0 110px;
+    border-radius: 6px;
+    background-color:rgb(5, 5, 6);  
+    cursor: pointer; 
+    font-size: .90rem;
+}
+
+.view2 a{
+    color: white;
+    text-decoration: none !important;
+}
+
+.view2 a:hover{
+    color: white;
+}
+
+view1:hover{
+    background-color: rgb(59, 58, 58);
+}
+
+
+
+
+/* url image */
+
+
+
+.url::before{
+            background: url(https://booking.webestica.com/landing/assets/images/bg/06.png);
+            background-repeat: no-repeat;
+            background-position: 0 0 350px 0;
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            z-index: -1;
+            margin: auto auto auto auto;
+}
+
+.btn10{
+    text-decoration: none;
+    color: #6f42c1;
+    border-radius: 5px;
+    background-color: rgb(34 37 42);
+    font-size: 13px;
+    padding: 7px 7px;
+    margin: 0 8px;
+}
+
+.btn10:hover{
+    color: white;
+    background-color: #6f42c1;
+}
+
+.btn11{
+    text-decoration: none;
+    color: #198754;
+    border-radius: 5px;
+    background-color: rgb(34 37 42);
+    font-size: 13px;
+    padding: 7px 7px;
+}
+
+.btn11:hover{
+    color: white;
+    background-color:#198754;
+}
+
+.btn12{
+    text-decoration: none;
+    color: #dc3545;
+    border-radius: 5px;
+    background-color:rgb(34 37 42);
+    font-size: 13px;
+    padding: 7px 7px;
+}
+
+.btn12:hover{
+    color: white;
+    background-color:#dc3545;
+}
+
+.container3{
+   text-align: center;
+}
+
+
+
+/* Footer */
+
+.btn8{
+    width:150px;
+    margin:15px;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(131 120 228);
+    border: 2px;
+    border-radius: 6px;
+}
+
+.btn8 a:hover{
+    background-color: rgb(133, 121, 245);
+    cursor: pointer;
+}
+
+.btn8 a{
+    color: white;
+    text-decoration: none !important;
+}
+
+
+

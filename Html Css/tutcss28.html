@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .box{
+            background-color: aqua;
+            color: black;
+            border: 2px solid rgb(86, 86, 26);
+            padding: 10px 20px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Contact Us
+        </div>
+
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reiciendis nulla labore temporibus aliquid a deleniti quis nam officiis vitae nobis ex blanditiis voluptatem neque, enim molestiae assumenda ab qui!
+        </div>
+
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolores a fugit.
+        </div>
+
+        <footer class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </footer>
+
+        <!-- <div class="box">Item1</div>
+        <div class="box">Item2</div>
+        <div class="box">Item3</div>
+        <div class="box">Item4</div>
+        <div class="box">Item5</div>
+        <div class="box">Item6</div>
+        <div class="box">Item7</div>
+        <div class="box">Item8</div>
+        <div class="box">Item9</div>
+        <div class="box">Item10</div>
+        <div class="box">Item11</div>
+        <div class="box">Item12</div>
+        <div class="box">Item13</div>
+        <div class="box">Item14</div> -->
+    </div>
+</body>
+</html>

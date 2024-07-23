@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout/interval</title>
+</head>
+<body>
+    <div class="container">
+        This is time <span id="time"></span>
+    </div>
+
+
+
+    <script>
+        console.log('This is js TUT');
+        // setTimeout : run function one time
+        // clearTimeout : run function repeatedly
+    
+        function greet(name, byeText){
+            console.log("Greetings" + name + "" + byeText);
+        }
+    
+        // timeOut = setTimeout(greet, 5000, " Butt", " Takecare");
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+        // intervalID = setInterval(greet, 1000, " Butt", " Bye");
+        // clearInterval(intervalID);
+
+        function displayTime(){
+            time  = new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML = time;
+        }
+
+        setInterval(displayTime, 1000);
+
+
+        </script>
+</body>
+</html>

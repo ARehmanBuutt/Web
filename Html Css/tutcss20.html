@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom properties</title>
+    <style>
+        :root{
+            --primary-color: rgb(148, 140, 140);
+            --danger-color: rgb(81, 3, 16);
+
+        }
+        .box{
+            /* --box-color: red;  variable is used to add same thing in multiple sides* */
+            width: 200px;
+            height: 190px;
+            background-color: var(--primary-color);
+            border: 2px solid gray;
+            box-shadow: 3px 3px var(--danger-color);
+            margin: 5px 10px;
+        }
+        .container{
+            align-items: center;
+            justify-content: center; 
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, reiciendis, harum quaerat hic earum similique at aut provident unde eveniet ut quo laboriosam consectetur dolore? Animi voluptatibus assumenda velit dolorem?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reiciendis earum qui soluta neque eius, quod voluptatum placeat aut magni molestias debitis ullam similique architecto quas natus magnam maxime ut?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem reiciendis earum qui soluta neque eius, quod voluptatum placeat aut magni molestias debitis ullam similique architecto quas natus magnam maxime ut?</div>
+    </div>
+</body>
+</html>

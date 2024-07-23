@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: brown;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div > p{
+            color: blue;
+            font-weight: bold;
+        } */
+
+        /* div > p  this >symbol means only p is affected when it is direct child to div */
+
+        div + p{
+            background-color: blueviolet;
+            color: azure;
+        }
+
+        /* div + p this means p which is next siblling to div will be effective */
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+            <li class="item"><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></li>    
+            </ul>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+</html>

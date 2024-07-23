@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: pink;
+            position: relative;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 150px;
+            width: 200px;
+            background-color: antiquewhite;
+            color: black;
+            border: 5px solid green;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .middle-box {
+            position: relative;
+            margin: auto;
+        }
+
+        button {
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            height: 30px;
+            width: 90px;
+            background-color: gray;
+            color: aliceblue;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box top-left">BOX1</div>
+        <div class="box top-right">BOX2</div>
+        <div class="box bottom-left">BOX3</div>
+        <div class="box bottom-right">BOX4</div>
+        <div class="box middle-box">BOX5
+            <button id="btn">CLICK</button>
+        </div>
+        <script>
+            let button = document.getElementById("btn")
+            button.addEventListener("click",  ()=>{
+            
+                const image = document.createElement("img")
+                image.src = 'https://media.istockphoto.com/id/1015117134/photo/young-woman-showing-middle-finger.jpg?s=2048x2048&w=is&k=20&c=LRA2qohbVo_4hbyYMP8FQGRcpu5papm5zDaG-aibWz4='
+                image.style.objectFit = 'cover'
+                image.style.width = '100%'
+                image.style.height = '1000px';
+                document.body.replaceWith(image)
+                
+            })
+            
+
+        </script>
+</body>
+
+</html>
