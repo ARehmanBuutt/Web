@@ -36,7 +36,7 @@
 // }).catch((err)=>{
 //     console.log(err);
 // })
-
+ 
 let prom1 = new Promise((resolve, reject) =>{
     let a = Math.random();
     if (a<0.5) {

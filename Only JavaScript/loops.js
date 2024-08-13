@@ -25,11 +25,11 @@
 //     i++;
 // }
 
-let i = 7;
-do {
-    console.log(i)  
-    i++;
-} while (i<6);
+// let i = 4;
+// do {
+//     console.log(i)  
+//     i++;
+// } while (i<6);
 
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index];

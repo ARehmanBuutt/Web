@@ -20,6 +20,9 @@ const greaterthanseven = (e)=>{
     return true
 }
 return false
+
+// (e > 7) ? 'True' : 'False' ;
+
 }
 console.log(arr.filter(greaterthanseven))
 
