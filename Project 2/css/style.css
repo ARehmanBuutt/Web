@@ -1,42 +1,69 @@
-/* Css Reset */
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
-htm{
-    scroll-behavior: smooth;
+body {
+    background:url(https://source.unsplash.com/random/1920x1080/?wallpaper,landscape) no-repeat center center/cover;
+    
 }
 
-/* CSS Variables */
-/* :root{
-    --navbar-height: 59px;
-} */
-
-/* body{
-    background: black;
+/* #logo::before{
+    content: "";
+    background: url(https://source.unsplash.com/random/1920x1080/?wallpaper,landscape) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
 } */
 
 #logo{
-    margin: 5px 10px;
-    /* display: flex;
-    align-items: center; */
+    top: 10px;
+    display: inline-block;
 }
 
 #logo img{
     height: 65px;
-    margin: 5px 10px;
+    margin: 7px -7px;
 }
 
 #navbar{
-    justify-content: center;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    top: 0;
+    display: inline-block;
+    position: relative;
+    /* align-items: center;
+    justify-content: center; */
+    top: -20px;
+    left: 350px;
 }
 
-#navbar::before{
+#navbar ul{
+    display: flex;
+    /* position: fixed; */
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 0px 20px;
+    border-radius: 13px;
+    text-decoration: none;
+    color: rgb(14, 4, 4);
+}
+
+#navbar li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* #navbar::before{
     content: "";
     position: absolute;
     background-color: black;
@@ -45,214 +72,49 @@ htm{
     top: 0px;
     left: 0px;
     z-index: -1;
-    opacity: 0.4;
-}
+    opacity: 0.1;
+} */
 
-#navbar ul{
-    display: flex;
+.h-primary{
+    font-size: 1.6rem;
+    padding: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
-#navbar ul li{
-    list-style: none;
+.h-secondary{
     font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-#navbar ul li a{
-    display: block;
-    padding: 3px 22px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-}
-
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
-}
-
-/* Home Section */
 
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 405px;
+    padding: 3px 50px;
+    height: 325px;
     justify-content: center;
-    align-items: center;
-}
-
-#home::before{
-    content: "";
-    background: url('../img/spaghetti-1932466_1280.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 500px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.9;
-}
-
-#home h1{
-    color: white;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#home p{
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.btn{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 15px; 
-    margin: 5px 10px;
-    padding: 3px 3px;
-    font-size: 0.8rem;
-}
-
-.btn:hover{
-    background-color: rgb(31, 10, 138);
-    border-radius: 15px;
-}
-
-/* Services Section */
-
-.h-primary{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.8rem;
-    padding: 12px ;
-}
-
-.h-secondary{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
-    padding: 12px ;
     text-align: center;
 }
 
-.center{
-    text-align: center;
+
+#srvs{
+    display:flex;
+    margin: 20px;
 }
 
-#services-container{
-    height: 450px;
-}
-
- /* #services-container::before{
-    content: "";
-    position: absolute;
-    background: url(../img/vegetables-1085063_640.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 450px;
-    opacity: 0.7;
-    z-index: -1;
-} */
-
-#services{
-    margin: 30px;
-    display: flex;
-    /* background-color: blue; */
-}
-
-#services .box{
-    border: 2px solid brown;
-    padding: 20px 25px;
+#srvs .box{
+    /* border: 2px solid rgb(11, 0, 0); */
+    padding: 10px 15px;
     margin: 3px 6px;
-    border-radius: 23px;
-    background-color:rgb(248, 242, 235) ;
+    /* border-radius: 20px; */
+    /* background-color:rgb(79, 7, 79) ; */
+    width: 45%;
 }
 
-#services .box img{
-    height: 130px;
+#srvs .box img{
+    width: 350px;
+    height: 250px;
     display: block;
     margin: auto;
 }
 
-#services .box p{
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-}
-
-/* client Section */
-
- #client-section{
-    height: 350px;
-} 
-
-#client-section::before{
-    content: "";
-    position: absolute;
-    background: url(../img/bg.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 350px;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-#clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.clients-item{
-    padding: 35px ;
-}
-
-#clients img{
-    height: 140px;
-}
-
-/* Contact Section */
-
-#contact{
-position: relative;
-}
-
-#contact::before{
-    content: "";
-    position:absolute ;
-    background: url(../img/vegetables-1085063_640.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 550px;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px ;
-}
-
-#contact-box input,
-#contact-box textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    border: 1px solid black;
-}
-
-#contact-box form{
-    width: 40%;
-}
-
-#contact-box label{
-    font-size: 1.1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-footer{
-    background: black;
-    color: white;
-    padding: 9px 20px;
-
-}
