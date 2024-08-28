@@ -10,25 +10,25 @@ const msg = document.querySelector(".msg")
 //     console.log(code, countryList[code])
 // }
 
-for (let select of dropdowns){
-    for (currCode in countryList){
+for (let select of dropdowns) {
+    for (currCode in countryList) {
         let newOption = document.createElement("option");
         newOption.innerText = currCode;
         newOption.value = currCode;
-        if(select.name === "from" && currCode === "USD"){
+        if (select.name === "from" && currCode === "USD") {
             newOption.selected = "selected";
-        } else if(select.name === "to" && currCode === "PKR"){
-                newOption.selected = "selected";
+        } else if (select.name === "to" && currCode === "PKR") {
+            newOption.selected = "selected";
         }
         select.append(newOption);
     }
 
-    select.addEventListener("change", (evt)=>{
+    select.addEventListener("change", (evt) => {
         updateFlag(evt.target)
     })
 }
 
-const updateFlag = (element) =>{
+const updateFlag = (element) => {
     let currCode = element.value;
     let countryCode = countryList[currCode];
     let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`
@@ -36,7 +36,7 @@ const updateFlag = (element) =>{
     img.src = newSrc;
 }
 
-btn.addEventListener("click", (evt) =>{
+btn.addEventListener("click", (evt) => {
     evt.preventDefault();
     updateExchangeRate();
     // let amount = document.querySelector(".amount input")
@@ -50,20 +50,20 @@ btn.addEventListener("click", (evt) =>{
     // let response = await fetch(URL);
     // let data = await response.json();
     // let rate = data[toCurr.value.toLowerCase()]
-    
+
     // let finalAmount = amtVal * rate;
     // msg.innerText = ` ${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 })
 
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () => {
     updateExchangeRate();
 })
 
-const updateExchangeRate = async () =>{
+const updateExchangeRate = async () => {
     let amount = document.querySelector(".amount input")
     let amtVal = amount.value;
-    if(amtVal === "" || amtVal < 1){
+    if (amtVal === "" || amtVal < 1) {
         amtVal = 1;
         amount.value = "1"
     }
@@ -72,7 +72,7 @@ const updateExchangeRate = async () =>{
     let response = await fetch(URL);
     let data = await response.json();
     let rate = data["conversion_rates"][toCurr.value];
-    
+
     let finalAmount = amtVal * rate;
     msg.innerText = ` ${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 }

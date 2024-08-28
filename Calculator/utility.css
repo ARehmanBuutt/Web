@@ -1,18 +1,23 @@
-.center{
+.center {
     text-align: center;
 }
-.center1{
+
+.center1 {
     align-items: center;
 }
-.bg-black{
+
+.bg-black {
     background-color: black;
 }
-.mx-auto{
+
+.mx-auto {
     margin: auto;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-.flex-col{
+
+.flex-col {
     flex-direction: column;
-} 
+}

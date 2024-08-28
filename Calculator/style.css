@@ -1,16 +1,16 @@
-body{
+body {
     background-color: black;
 }
 
-.container{
+.container {
     width: 15%;
 }
 
-h1{
+h1 {
     color: white;
 }
 
-.button{
+.button {
     width: 45px;
     padding: 15px;
     margin: 0 3px;
@@ -18,10 +18,10 @@ h1{
     border: 1px solid rgb(40, 39, 39);
     cursor: pointer;
     background-color: rgb(40, 39, 39);
-    color: white; 
+    color: white;
 }
 
-.button1{
+.button1 {
     width: 45px;
     padding: 15px;
     margin: 0 3px;
@@ -32,7 +32,7 @@ h1{
     color: black;
 }
 
-.button2{
+.button2 {
     width: 45px;
     padding: 15px;
     margin: 0 3px;
@@ -43,15 +43,17 @@ h1{
     color: white;
 }
 
-.button, .button1, .button2{
+.button,
+.button1,
+.button2 {
     font-weight: bolder;
 }
 
-.row{
+.row {
     margin: 3px 0;
 }
 
-.row input{
+.row input {
     font-size: 20px;
     border: 1px solid black;
     border-radius: 10px;
