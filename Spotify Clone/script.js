@@ -77,11 +77,11 @@ async function displayAlbums() {
     let anchors = div.getElementsByTagName("a")
     let cardContainer = document.querySelector(".cardContainer")
 
-    Array.from(anchors).forEach(async e=>{
+    Array.from(anchors).forEach(async e => {
 
-    // let array = Array.from(anchors)
-    // for (let i = 0; i < array.length; i++) {
-    //     const e = array[i];
+        // let array = Array.from(anchors)
+        // for (let i = 0; i < array.length; i++) {
+        //     const e = array[i];
 
         if (e.href.includes("/songs")) {
             let folder = e.href.split("/").slice(-1)[0]
@@ -105,7 +105,7 @@ async function displayAlbums() {
             <p>${response.description}</p>
         </div> `
         }
-        })
+    })
     // }
 
 }
@@ -186,14 +186,14 @@ async function main() {
     })
 
     // eventListner for mute volume
-    document.querySelector(".volume>img").addEventListener("click", e=>{
-        if(e.target.src.includes("svgs/volume.svg")){
-        e.target.src = e.target.src.replace = ("svgs/volume.svg","svgs/mute.svg")
-        currentSong.volume = 0;
-        document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
+    document.querySelector(".volume>img").addEventListener("click", e => {
+        if (e.target.src.includes("svgs/volume.svg")) {
+            e.target.src = e.target.src.replace = ("svgs/volume.svg", "svgs/mute.svg")
+            currentSong.volume = 0;
+            document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
         }
-        else{
-            e.target.src = e.target.src.replace = ("svgs/mute.svg" , "svgs/volume.svg")
+        else {
+            e.target.src = e.target.src.replace = ("svgs/mute.svg", "svgs/volume.svg")
             currentSong.volume = .10;
             document.querySelector(".range").getElementsByTagName("input")[0].value = 10;
         }
